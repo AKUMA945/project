@@ -1,0 +1,583 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  background: #526B86;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.header .Left {
+  margin: 25px 0 0 0;
+  color: #EAEDF0;
+  width: 230px;
+  display: flex;
+  text-indent: 1em;
+  font-size: 18px;
+}
+
+.header .Left span {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header .Right {
+  width: 700px;
+  display: flex;
+  color: #EAEDF0;
+}
+
+.header .Right .hove:hover {
+  background: #7392B3;
+}
+
+.header .Right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .Right div:nth-child(1) {
+  flex: 4;
+  justify-content: flex-end;
+  transition: all;
+}
+
+.header .Right div:nth-child(1) .ant-input-search {
+  transition: width .35s linear;
+}
+
+.header .Right div:nth-child(1) input {
+  border: 0;
+  outline: none;
+  transition: all;
+}
+
+.header .Right div:nth-child(2) {
+  flex: 2;
+  font-size: 22px;
+  position: relative;
+}
+
+.header .Right div:nth-child(2) .head-example {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: #17C4BB;
+  position: absolute;
+  right: 53px;
+  top: 18px;
+}
+
+.header .Right div:nth-child(3) {
+  flex: 2;
+}
+
+.header .Right div:nth-child(3) span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url("https://fc3tn.baidu.com/it/u=3929630184,8110791&fm=202&src=bqdata") no-repeat;
+  display: flex;
+}
+
+.header .Right div:nth-child(3) a {
+  padding: 0px 10px;
+  color: #EAEDF0;
+}
+
+.header .Right div:nth-child(4) {
+  flex: 2;
+}
+
+.header .Right div:nth-child(4) a {
+  color: #EAEDF0;
+}
+
+main {
+  flex: 1;
+}
+
+main .ant-layout-has-sider {
+  margin-top: 68px;
+}
+
+main .ant-menu .ant-menu-item {
+  display: flex;
+  height: 78px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .ant-menu .ant-menu-item i {
+  font-size: 23px;
+  margin: 0;
+}
+
+main .ant-menu .ant-menu-item span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .ant-menu .ant-menu-item span a {
+  color: #EAEDF0;
+}
+
+main .ant-menu .ant-menu-submenu {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .ant-menu .ant-menu-submenu .ant-menu-submenu-arrow {
+  display: none;
+}
+
+main .ant-menu .ant-menu-submenu .ant-menu-submenu-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+main .ant-menu .ant-menu-submenu .ant-menu-submenu-title span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main .ant-menu .ant-menu-submenu .ant-menu-submenu-title span i {
+  font-size: 23px;
+  margin: 0;
+}
+
+main .ant-menu .ant-menu-submenu .ant-menu-submenu-title span span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+main .content ul {
+  flex: 1;
+  background: #fff;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+}
+
+main .content ul li {
+  flex: 1;
+  padding: 5px;
+}
+
+main .content ul li:nth-child(1) {
+  border-bottom: 3px solid #F5F5F5;
+  display: flex;
+}
+
+main .content ul li:nth-child(1) div {
+  display: flex;
+  flex-direction: column;
+}
+
+main .content ul li:nth-child(1) div:nth-child(1) {
+  flex: 8;
+}
+
+main .content ul li:nth-child(1) div:nth-child(1) span:nth-child(1) {
+  font-size: 30px;
+  font-weight: 400;
+  color: #A780A9;
+}
+
+main .content ul li:nth-child(1) div:nth-child(1) span:nth-child(2) {
+  font-size: 10px;
+  color: #B2B5BC;
+  font-weight: 600;
+}
+
+main .content ul li:nth-child(1) div:nth-child(2) {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .content ul li:nth-child(2) {
+  font-size: 10px;
+  color: #B2B5BC;
+  font-weight: 600;
+}
+
+main .Middle {
+  width: 100%;
+  height: 433px;
+  display: flex;
+  margin-top: 20px;
+}
+
+main .Middle div {
+  flex: 1;
+  background: #fff;
+  margin-left: 20px;
+}
+
+main .Middle div .rect {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+main .Middle div .rect #chartdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+main .Middle div .list {
+  width: 90%;
+  height: 80%;
+}
+
+main .Middle div .list li {
+  width: 100%;
+  height: 40px;
+  background: #FAFAFA;
+  margin: 10px 0;
+}
+
+main .bottom {
+  width: 100%;
+  height: 598px;
+  margin-top: 20px;
+  display: flex;
+}
+
+main .bottom div {
+  flex: 1;
+  background: #fff;
+  margin-left: 20px;
+}
+
+main .bottom div .echarts {
+  width: 90%;
+  height: 90%;
+  margin-left: 0px;
+}
+
+main .bottom div .Charts {
+  width: 90%;
+  height: 90%;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .bottom div .Charts #chartdivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+main .top_content {
+  width: 90%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+main .top_content span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+main .box {
+  width: 100%;
+  height: 100%;
+  background: #EEF1F5;
+}
+
+main .box .a_box {
+  padding: 20px;
+}
+
+main .box .header-box {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .box .header-box div:nth-child(1) {
+  color: #888;
+  font-size: 13px;
+  text-shadow: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+main .box .header-box div:nth-child(1) i {
+  padding: 10px;
+}
+
+main .box .header-box div:nth-child(1) .group_box {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  height: 100%;
+}
+
+main .box .header-box div:nth-child(1) .group_box .Group:hover {
+  background: #42C9D5;
+}
+
+main .box .header-box div:nth-child(1) .group_box .Group:hover a {
+  color: #fff;
+}
+
+main .box .header-box div:nth-child(1) .group_box .Group {
+  width: 105px;
+  height: 30px;
+  border: 1px solid #42C9D5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+main .box .header-box div:nth-child(1) .group_box .Group a {
+  color: #42C9D5;
+}
+
+main .box .header-box div:nth-child(2) {
+  height: 100%;
+  display: flex;
+}
+
+main .box .header-box div:nth-child(2) .left_se {
+  width: 67.16px;
+  height: 100%;
+  background: #BFCAD1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+main .box .header-box div:nth-child(2) .left_se a {
+  color: #eee;
+}
+
+main .box .header-box div:nth-child(2) .Tes {
+  height: 100%;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #659be0;
+  color: #fff;
+}
+
+main .box .container {
+  width: 100%;
+}
+
+main .box .container .nav {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-top: 15px;
+}
+
+main .box .container .nav a {
+  color: black;
+  padding: 10px;
+  border: 0;
+  height: 100%;
+}
+
+main .box .container .nav .active {
+  border-bottom: 4px solid #36C6D3;
+}
+
+main .box .container .bottom_container {
+  margin-top: 30px;
+  width: 100%;
+}
+
+main .emotion {
+  width: 100%;
+  height: 209px;
+  display: flex;
+}
+
+main .emotion .increment {
+  flex: 4;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+main .emotion .trend {
+  flex: 4;
+  height: 100%;
+  background: #fff;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+main .emotion p {
+  width: 95%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+main .MainPoints {
+  width: 100%;
+  height: 537px;
+  background: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .MainPoints .p {
+  width: 98%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+main .MainPoints .p div {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+main .MainPoints .p div a {
+  height: 100%;
+  border: 0;
+  color: black;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+main .MainPoints .p div .active {
+  border-bottom: 4px solid #36C6D3;
+}
+
+main .MainPoints .List_content {
+  width: 100%;
+  height: 437px;
+}
+
+main .MainPoints .List_content .list {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .MainPoints .List_content .list li:hover {
+  background: #F9F9F9;
+}
+
+main .MainPoints .List_content .list li {
+  flex: 1;
+  display: flex;
+}
+
+main .MainPoints .List_content .list li div:nth-child(1) {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .MainPoints .List_content .list li div:nth-child(1) span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  background: chocolate;
+}
+
+main .MainPoints .List_content .list li div:nth-child(2) {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+}
+
+main .MainPoints .List_content .list li div:nth-child(2) p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .add_box .Middle div .mid {
+  margin-left: -10px;
+}
